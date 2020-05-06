@@ -1,0 +1,8 @@
+server:
+  port: 9090
+
+dubbo:
+  registry:
+    address: zookeeper://127.0.0.1:2181 # zookeeper 连接地址
+  application:
+    name: consumer
