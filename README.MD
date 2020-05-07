@@ -111,4 +111,153 @@ dubbo:
     address: zookeeper://127.0.0.1:2181 # zookeeper 连接地址
   application:
     name: consumer
-``
+```
+
+### 4、使用配置类 进行 dubbo配置
+- 在 上面的基础上进行修改
+#### 4.1 provider 服务提供者
+- 创建一个 dubbo 配置类：Dubboconfig
+- 公共接口实现类使用 spring 原生@service注解
+- 删除 yml 里面关于 dubbo的所有配置
+- 入口类的 @EnableDubbo 注解 要加上哟
+- 启动服务即可...
+```java
+package com.nn.config;
+
+import com.nn.service.UserService;
+import org.apache.dubbo.config.ApplicationConfig;
+import org.apache.dubbo.config.ProtocolConfig;
+import org.apache.dubbo.config.RegistryConfig;
+import org.apache.dubbo.config.ServiceConfig;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+/**
+ * @ClassName DubboConfig
+ * @Author nn
+ * @Date 2020/5/7 11:30
+ */
+
+@Configuration
+public class DubboConfig {
+
+    /**
+     *  配置应用名
+     */
+
+    @Bean
+    public ApplicationConfig applicationConfig(){
+        return new ApplicationConfig("provider");
+    }
+
+    /**
+     *  配置 注册中心地址
+     */
+    @Bean
+    public RegistryConfig registryConfig(){
+        return new RegistryConfig("zookeeper://127.0.0.1:2181");
+    }
+
+    /**
+     *  配置节点名称和服务端口
+     */
+    @Bean
+    public ProtocolConfig protocolConfig(){
+        return new ProtocolConfig("dubbo", 20880);
+    }
+
+
+    /**
+     *  配置暴露服务
+     */
+    @Bean
+    public ServiceConfig<UserService> userServiceServiceConfig(UserService userService,ApplicationConfig applicationConfig,RegistryConfig registryConfig,ProtocolConfig protocolConfig){
+        ServiceConfig<UserService> serviceConfig = new ServiceConfig<>();
+        // 设置你要暴露的接口
+        serviceConfig.setInterface(UserService.class);
+        // 将暴露的接口指向userService引用
+        serviceConfig.setRef(userService);
+
+        // 注入applicationName
+        serviceConfig.setApplication(applicationConfig);
+        // 注入节点名称和服务端口
+        serviceConfig.setProtocol(protocolConfig);
+        //注入 注册中心
+        serviceConfig.setRegistry(registryConfig);
+
+        serviceConfig.export();
+        return serviceConfig;
+    }
+}
+```
+
+#### 4.2 consumer 服务消费者
+- 在 上面的基础上进行修改
+- 使用 set 方式注入 服务
+```text
+private UserService userService;
+public void setUserService(UserService userService) {
+    this.userService = userService;
+}
+```
+- 创建一个 dubbo 配置类：Dubboconfig
+- 删除 yml 里面关于 dubbo的所有配置
+- 入口类的 @EnableDubbo 注解 要加上哟
+- 启动服务即可...
+```java
+package com.nn.config;
+
+import com.nn.service.ConsumerServiceImpl;
+import com.nn.service.UserService;
+import org.apache.dubbo.config.ApplicationConfig;
+import org.apache.dubbo.config.ReferenceConfig;
+import org.apache.dubbo.config.RegistryConfig;
+import org.apache.dubbo.config.annotation.Reference;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+/**
+ * @ClassName DubboConfig
+ * @Author nn
+ * @Date 2020/5/7 12:04
+ */
+
+@Configuration
+public class DubboConfig {
+
+    /**
+     *  配置应用名
+     */
+    @Bean
+    public ApplicationConfig applicationConfig(){
+        return new ApplicationConfig("consumer");
+    }
+
+    /**
+     *  配置 注册中心地址
+     */
+    @Bean
+    public RegistryConfig registryConfig(){
+        return new RegistryConfig("zookeeper://127.0.0.1:2181");
+    }
+
+
+    /**
+     *   引用UserServiceImpl服务
+     */
+    @Bean
+    public ReferenceConfig<UserService> userServiceReference(ConsumerServiceImpl consumerServiceImpl,ApplicationConfig applicationConfig,RegistryConfig registryConfig){
+
+        ReferenceConfig<UserService> referenceConfig = new ReferenceConfig<>();
+        referenceConfig.setInterface(UserService.class);
+        referenceConfig.setId("userService");
+        referenceConfig.setApplication(applicationConfig);
+        referenceConfig.setRegistry(registryConfig);
+
+        // 给 consumerServiceImpl 注入数据
+        consumerServiceImpl.setUserService(referenceConfig.get());
+        return referenceConfig;
+    }
+}
+
+```

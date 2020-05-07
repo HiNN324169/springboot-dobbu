@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a6915a3-9377-448b-97f2-8bf0e7319ff7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/nn/config/DubboConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/nn/service/ConsumerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/provider/src/main/java/com/nn/config/DubboConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/java/com/nn/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/java/com/nn/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/nn/ConsumerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/target/classes/com/nn/ConsumerApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/target/classes/com/nn/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/target/classes/com/nn/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/src/main/java/com/nn/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/java/com/nn/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/provider/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/provider/target/classes/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/target/classes/com/nn/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/provider/target/classes/com/nn/service/impl/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +127,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588758387851</updated>
-      <workItem from="1588758394994" duration="7175000" />
+      <workItem from="1588758394994" duration="12194000" />
     </task>
     <task id="LOCAL-00001" summary="springboot 集成 dubbo">
       <created>1588762763966</created>
@@ -140,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588819778787</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1">
+      <created>1588820030558</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1588820030558</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,57 +173,61 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="275" y="43" key="#Project_Structure/0.0.1366.768@0.0.1366.768" timestamp="1588760511648" />
-    <state x="488" y="68" key="#com.intellij.ide.util.MemberChooser" timestamp="1588758907153">
+    <state x="488" y="68" key="#com.intellij.ide.util.MemberChooser" timestamp="1588825361491">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="488" y="68" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1588758907153" />
-    <state x="217" y="0" key="CommitChangelistDialog2" timestamp="1588819773300">
+    <state x="488" y="68" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1588825361491" />
+    <state x="217" y="0" key="CommitChangelistDialog2" timestamp="1588820027436">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="217" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1588819773300" />
+    <state x="217" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1588820027436" />
     <state x="463" y="125" key="FileChooserDialogImpl" timestamp="1588762692126">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="125" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1588762692126" />
-    <state width="1323" height="303" key="GridCell.Tab.0.bottom" timestamp="1588762577361">
+    <state width="1323" height="270" key="GridCell.Tab.0.bottom" timestamp="1588825557279">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="303" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1588762577361" />
-    <state width="1323" height="303" key="GridCell.Tab.0.center" timestamp="1588762577360">
+    <state width="1323" height="270" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1588825557279" />
+    <state width="1323" height="270" key="GridCell.Tab.0.center" timestamp="1588825557279">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="303" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1588762577360" />
-    <state width="1323" height="303" key="GridCell.Tab.0.left" timestamp="1588762577360">
+    <state width="1323" height="270" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1588825557279" />
+    <state width="1323" height="270" key="GridCell.Tab.0.left" timestamp="1588825557279">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="303" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1588762577360" />
-    <state width="1323" height="303" key="GridCell.Tab.0.right" timestamp="1588762577360">
+    <state width="1323" height="270" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1588825557279" />
+    <state width="1323" height="270" key="GridCell.Tab.0.right" timestamp="1588825557279">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="303" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1588762577360" />
-    <state width="1323" height="303" key="GridCell.Tab.1.bottom" timestamp="1588762577361">
+    <state width="1323" height="270" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1588825557279" />
+    <state width="1323" height="270" key="GridCell.Tab.1.bottom" timestamp="1588825557280">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="303" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1588762577361" />
-    <state width="1323" height="303" key="GridCell.Tab.1.center" timestamp="1588762577361">
+    <state width="1323" height="270" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1588825557280" />
+    <state width="1323" height="270" key="GridCell.Tab.1.center" timestamp="1588825557280">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="303" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1588762577361" />
-    <state width="1323" height="303" key="GridCell.Tab.1.left" timestamp="1588762577361">
+    <state width="1323" height="270" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1588825557280" />
+    <state width="1323" height="270" key="GridCell.Tab.1.left" timestamp="1588825557280">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="303" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1588762577361" />
-    <state width="1323" height="303" key="GridCell.Tab.1.right" timestamp="1588762577361">
+    <state width="1323" height="270" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1588825557280" />
+    <state width="1323" height="270" key="GridCell.Tab.1.right" timestamp="1588825557280">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="303" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1588762577361" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1588819789507">
+    <state width="1323" height="270" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1588825557280" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1588820038227">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1588819789507" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1588820038227" />
     <state x="57" y="79" key="new project wizard" timestamp="1588762012502">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="57" y="79" key="new project wizard/0.0.1366.768@0.0.1366.768" timestamp="1588762012502" />
+    <state x="671" y="70" width="672" height="678" key="search.everywhere.popup" timestamp="1588822500684">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="671" y="70" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1588822500684" />
   </component>
 </project>

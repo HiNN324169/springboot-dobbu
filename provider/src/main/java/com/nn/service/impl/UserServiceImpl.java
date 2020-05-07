@@ -2,7 +2,7 @@ package com.nn.service.impl;
 
 import com.nn.pojo.User;
 import com.nn.service.UserService;
-import org.apache.dubbo.config.annotation.Service;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +12,8 @@ import java.util.List;
  * @Author nn
  * @Date 2020/5/6 17:55
  */
-@Service
+//@org.apache.dubbo.config.annotation.Service
+    @Service
 public class UserServiceImpl implements UserService {
 
     private static List<User> userList = new ArrayList<>();

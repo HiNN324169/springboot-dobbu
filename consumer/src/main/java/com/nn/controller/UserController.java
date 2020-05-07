@@ -1,7 +1,7 @@
 package com.nn.controller;
 
-import com.nn.service.UserService;
-import org.apache.dubbo.config.annotation.Reference;
+import com.nn.service.ConsumerServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,11 +14,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/dubbo")
 public class UserController {
 
-    @Reference
-    private UserService userService;
+    @Autowired
+    private ConsumerServiceImpl consumerServiceImpl;
 
     @RequestMapping("/getAllUser")
     public Object getAllUser(){
-        return userService.queryAllUser();
+        return consumerServiceImpl.queryAllUser();
     }
 }
