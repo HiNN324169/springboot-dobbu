@@ -36,7 +36,6 @@
         <!--springboot 依赖-->
 
 <!--        配置方式一：阿里巴巴 依赖配置-->
-
 <!--        <dependency>-->
 <!--            <groupId>com.alibaba.boot</groupId>-->
 <!--            <artifactId>dubbo-spring-boot-starter</artifactId>-->
@@ -59,9 +58,7 @@
         <!--        配置方式一：阿里巴巴 依赖配置-->
 
 
-
-
-<!--        apache dubbo-->
+        <!--        apache dubbo-->
         <dependency>
             <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo-spring-boot-starter</artifactId>
@@ -79,8 +76,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
-<!--        apache dubbo-->
+        <!--        apache dubbo-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>

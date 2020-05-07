@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a6915a3-9377-448b-97f2-8bf0e7319ff7" name="Default Changelist" comment="" />
+    <list default="true" id="5a6915a3-9377-448b-97f2-8bf0e7319ff7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/provider/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +27,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="H:\nn\workspace\IDEA\newSpace1\springboot-dubbo\.idea" />
+      </set>
+    </option>
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -30,6 +42,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1bWqqPPQyNxqWaxbzRcfw06LHvg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
     <option name="autoscrollFromSource" value="true" />
@@ -45,6 +58,7 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -105,12 +119,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588758387851</updated>
-      <workItem from="1588758394994" duration="4190000" />
+      <workItem from="1588758394994" duration="5467000" />
     </task>
+    <task id="LOCAL-00001" summary="springboot 集成 dubbo">
+      <created>1588762763966</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588762763966</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="springboot 集成 dubbo" />
+    <option name="LAST_COMMIT_MESSAGE" value="springboot 集成 dubbo" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="43" key="#Project_Structure" timestamp="1588760511648">
@@ -121,6 +147,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="488" y="68" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1588758907153" />
+    <state x="217" y="0" key="CommitChangelistDialog2" timestamp="1588762756054">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="217" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1588762756054" />
     <state x="463" y="125" key="FileChooserDialogImpl" timestamp="1588762692126">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -157,6 +187,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="303" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1588762577361" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1588817897581">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1588817897581" />
     <state x="57" y="79" key="new project wizard" timestamp="1588762012502">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
