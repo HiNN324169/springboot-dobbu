@@ -69,7 +69,7 @@
 @com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo
 ```
 
-#####3.1.3 .yml配置
+##### 3.1.3 .yml配置
 ```$xslt
 server:
   port: 8080
