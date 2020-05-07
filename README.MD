@@ -50,7 +50,7 @@
 ```
 
 
-###3、dubbo配置
+### 3、dubbo配置
 #### 3.1 provider
 
 ##### 3.1.1  需要暴露的服务service
