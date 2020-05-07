@@ -53,7 +53,7 @@
 ###3、dubbo配置
 #### 3.1 provider
 
-#####3.1.1 service 需要暴露的服务
+##### 3.1.1  需要暴露的服务service
 - 使用alibaba 或 Apache 提供的@service 注解，根据你引入的依赖而定。（使用了这两个@service注册，就不需要使用 spring原生@service注解）
 
 ```$xslt
@@ -61,7 +61,7 @@
 或
 @com.alibaba.dubbo.config.annotation.Service
 ```
-#####3.1.2 入口类添加注解
+##### 3.1.2 入口类添加注解
 - springboot 入口类 加入 @EnableDubbo 注解：使用alibaba 或者 Apache提供的
 ```$xslt
 @org.apache.dubbo.config.spring.context.annotation.EnableDubbo
@@ -69,7 +69,7 @@
 @com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo
 ```
 
-#####3.1.3 .yml配置
+##### 3.1.3 .yml配置
 ```$xslt
 server:
   port: 8080
@@ -94,7 +94,7 @@ dubbo:
     private UserService userService;
 ```
 
-#####3.2.2 入口类添加注解
+##### 3.2.2 入口类添加注解
 - springboot 入口类 加入 @EnableDubbo 注解：使用alibaba 或者 Apache提供的
 ```$xslt
 @org.apache.dubbo.config.spring.context.annotation.EnableDubbo
