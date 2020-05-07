@@ -85,7 +85,8 @@ dubbo:
 
 #### 3.2 consumer
 ##### 3.2.1 注入provider 提供的服务
-- 使用 @Reference 注入。使用alibaba 、Apache 提供的其中一个
+- consumer 中的 service 中 spring 提供的@service 注解
+- 在service中使用 @Reference 引用服务。使用alibaba 、Apache 提供的其中一个
 ```$xslt
     org.apache.dubbo.config.annotation.@Reference
     private UserService userService;

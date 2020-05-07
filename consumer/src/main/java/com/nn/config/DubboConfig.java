@@ -47,6 +47,7 @@ public class DubboConfig {
         referenceConfig.setApplication(applicationConfig);
         referenceConfig.setRegistry(registryConfig);
 
+
         // 给 consumerServiceImpl 注入数据
         consumerServiceImpl.setUserService(referenceConfig.get());
         return referenceConfig;
